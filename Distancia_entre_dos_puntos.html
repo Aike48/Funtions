@@ -1,0 +1,14 @@
+<script>
+    function calcularDistancia(x1, y1, x2, y2) {
+  const distancia = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+  console.log ("La distancia es", + distancia)
+}
+
+let xx1 = parseFloat(prompt("Ingresa la primera cordinada del primer punto"))
+let yy1 = parseFloat(prompt("Ingresa la segunda cordinada del primer punto"))
+let xx2 = parseFloat(prompt("Ingresa la primera cordinada segundo punto"))
+let yy2 = parseFloat(prompt("Ingresa la primera cordinada del segundo punto"))
+
+calcularDistancia (xx1, yy1, xx2, yy2)
+
+</script>

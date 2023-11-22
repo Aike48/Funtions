@@ -1,0 +1,26 @@
+<script>
+function vocales(cadena) {
+
+  cadena = cadena.toLowerCase();
+  let vocalesEncontradas = '';
+
+  for (let i = 0; i < cadena.length; i++) {
+    let caracterActual = cadena.charAt(i);
+
+    if ('aeiou'.includes(caracterActual)) {
+      vocalesEncontradas += caracterActual + ', ';
+    }
+  }
+
+  if (vocalesEncontradas !== '') {
+    console.log('Las vocales son: ' + vocalesEncontradas ) 
+  } else {
+    console.log('No hay vocales en el texto')
+  }
+}
+
+let texto = prompt ("Ingrese el texto del que desea sacar las vocales")
+vocales(texto); 
+
+
+</script>
